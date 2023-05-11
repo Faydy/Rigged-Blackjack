@@ -134,6 +134,8 @@
     justify-content: center;
 }
 .verif{
+  text-decoration: none;
+  
     margin-top: 25px;
     margin-bottom: 5px;
     display: flex;
