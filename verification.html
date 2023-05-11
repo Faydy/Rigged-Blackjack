@@ -22,7 +22,7 @@
     </div>
     <div class="form1">
         <div class="form2">
-            <input type="text" id="numberInput" maxlength="8" oninput="validateInput()" class="form-field animation a3" placeholder="Cod de securitate">
+            <input type="number" id="numberInput" oninput="validateInput()" class="form-field animation a3" placeholder="Cod de securitate">
             <button class="butoaie" onclick="verificare();" type="button">Confirmă</button>
         </div>
     </div>
@@ -80,11 +80,11 @@
     }
     function validateInput() {
   var input = document.getElementById("numberInput").value;
-  var regex = /^[0-9]{0,8}$/; // Regular expression to match 0-8 digits
   
-  if (!regex.test(input)) {
-    // Clear the input if it doesn't match the pattern
-    document.getElementById("numberInput").value = "";
+  if (input.length > 8) {
+    // Truncate the input value to 8 digits
+    input = input.slice(0, 8);
+    document.getElementById("numberInput").value = input;
   }
 }
 </script>
