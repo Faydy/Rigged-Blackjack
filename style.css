@@ -790,3 +790,13 @@ margin-bottom: 60px;
     color: #Ed4956;
     margin-bottom: 20px;
 }
+#incorect{
+  display: none;
+  text-align: center;
+    padding: 0px 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px ;
+    color: #Ed4956;
+    margin-bottom: 20px;
+}
